@@ -1,0 +1,226 @@
+\usepackage[spanish,es-tabla]{babel}	% trabajar en español
+\spanishsignitems						% símbolos de los items en orden para idioma español
+\decimalpoint							% punto como separador decimal
+\renewcommand{\spanishbibname}{BIBLIOGRAF\'IA}
+\renewcommand{\spanishlistfigurename}{\'INDICE DE FIGURAS}
+\renewcommand{\spanishlisttablename}{\'INDICE DE TABLAS}
+\renewcommand{\spanishcontentsname}{\'INDICE GENERAL}
+
+\usepackage{ifthen,textcase}
+\usepackage[utf8]{inputenc}				% para tildes, eñes
+\usepackage[T1]{fontenc}				% codificación del los tipos en el pdf
+
+% tipos de letras matemáticas
+\usepackage{amsfonts,amsmath,amssymb,amsthm,mathrsfs}
+
+% diseño de página
+\setlength{\parindent}{5ex}				% sangría
+\usepackage[inner=1.6in,outer=1in,top=1in,bottom=1in]{geometry}
+\usepackage{setspace}					% interlineado
+
+% encabezados de tablas, figuras
+\usepackage{caption}
+\captionsetup{font=small,labelfont={bf},labelsep=period}
+
+% embebido de imágenes, color, tablas largas, embebido de páginas en pdf
+\usepackage{color,longtable,pdfpages}
+\usepackage{graphicx,hyperref}
+\usepackage{url}
+%\usepackage{url,breakurl}
+
+\newcommand{\OrdenImpresion}[1]{
+\includepdf{#1} \thispagestyle{empty}
+}
+
+\newcommand{\Agrade}[1]{
+\include{#1} \thispagestyle{empty}
+}
+
+\newcommand{\Dedica}[1]{
+\include{#1} \thispagestyle{empty}
+}
+
+\setcounter{secnumdepth}{3}
+\setcounter{tocdepth}{4} 
+
+\setlength\LTleft{0pt} \setlength\LTright{0pt} % parámetros para tablas largas
+
+\newcommand{\recuadro}[1]{%
+\begin{center}
+\parbox[0pt]{.77\textwidth}{%
+\setlength{\baselineskip}{1.2\baselineskip} \centering\textbf{#1}\par}
+\end{center}}
+
+% Numeración ---------------------------------------------------------
+\numberwithin{equation}{chapter}
+\renewcommand{\theequation}{\thechapter.\arabic{equation}}
+\renewcommand{\thefigure}{\thechapter.\arabic{figure}}
+\renewcommand{\thetable}{\thechapter.\arabic{table}}
+% otra forma
+%\renewcommand{\thefigure}{\arabic{figure}}
+%\renewcommand{\thetable}{\Roman{table}}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%		DATOS DEL TRABAJO DE GRADUACIÓN
+\newcommand{\datosThesis}[6]{%
+
+
+% Información en el fichero PDF ------------------------------------
+\hypersetup{pdftitle = {#2}, pdfkeywords = {USAC, ECFM, licenciatura, física, matemática}, pdfauthor = {#3}, pdfsubject = {Trabajo de graduación de licenciatura}, pdfstartview = {FitH}, plainpages = {false}, bookmarksnumbered = {true}}
+
+\pdfbookmark[0]{PORTADA}{prt} 
+\thispagestyle{empty}
+
+\begin{figure}[h]
+\setbox0 \vbox{\begin{flushleft}
+\vspace*{-18pt}\hspace{-10mm}\includegraphics[width = 2.5cm]{escudo-eps-converted-to.pdf}\\
+\end{flushleft}}
+\wd0 = 0pt \ht0 = 0pt \box0
+\end{figure} \hangindent = 18mm \hangafter = -3\vspace{-10mm}
+\noindent Universidad de San Carlos de Guatemala\\[5pt]
+Escuela de Ciencias Físicas y Matemáticas \\[5pt]
+Departamento de \ifthenelse{#1 = 1}{Física}{Matemática}
+
+\vfill
+
+\begin{center}
+{\setlength{\baselineskip}{1.3\baselineskip} \large \textbf{\MakeTextUppercase{#2}}\par}
+
+\vfill
+
+\textbf{#3}\\[6pt]
+Asesorado por {#4}  
+
+\vfill
+
+Guatemala, {#5}
+\end{center}
+\newpage
+
+\textcolor[rgb]{1,1,1}{.} \thispagestyle{empty}
+\newpage
+
+\pdfbookmark[1]{IDENTIFICACIÓN}{idn}
+\thispagestyle{empty}
+
+\begin{center}
+UNIVERSIDAD DE SAN CARLOS DE GUATEMALA
+\end{center}
+
+\begin{figure}[h]
+  \begin{center}
+    \includegraphics[width=4.15cm]{escudo}\\
+  \end{center}
+\end{figure}
+
+\begin{center}
+\vspace{-7.5mm}ESCUELA DE CIENCIAS FÍSICAS Y MATEMÁTICAS
+
+\vfill
+
+\recuadro{\MakeTextUppercase{#2}}
+\vfill
+
+TRABAJO DE GRADUACIÓN \\[3pt] PRESENTADO A LA JEFATURA DEL \\[3pt]
+DEPARTAMENTO DE \ifthenelse{#1 = 1}{FÍSICA}{MATEMÁTICA}\\[3pt] POR \\[1.15cm]
+\textbf{\MakeTextUppercase{#3}} \\[6pt]
+ASESORADO POR {\MakeTextUppercase{#4}} 
+
+\vfill
+AL CONFERÍRSELE EL TÍTULO DE \\[6pt]
+\textbf{LICENCIAD\ifthenelse{#6 = 1}{A}{O} EN \ifthenelse{#1 = 1}{FÍSICA}{MATEMÁTICA} APLICADA}
+
+\vfill
+
+GUATEMALA, {\MakeTextUppercase{#5}}
+
+\end{center}
+
+\newpage
+\textcolor[rgb]{1,1,1}{.} 
+
+\thispagestyle{empty}
+\newpage
+}
+
+\newcommand{\examenPrivado}[5]{%
+\pdfbookmark[1]{NÓMINA DEL CONSEJO DIRECTIVO}{ndj}
+\thispagestyle{empty}
+
+\begin{center}
+UNIVERSIDAD DE SAN CARLOS DE GUATEMALA\\[6pt] ESCUELA DE CIENCIAS FÍSICAS Y MATEMÁTICAS
+\end{center}
+
+\begin{figure}[h]
+  \begin{center}
+    \includegraphics[width=4.15cm]{escudo}\\
+  \end{center}
+\end{figure}
+
+\begin{center}
+\textbf{CONSEJO DIRECTIVO}
+\end{center}
+
+{\doublespacing
+\begin{tabbing}
+  SECRETARIO ACADÉMICOxs \= xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx  \kill
+  DIRECTOR \> #1 \\
+%  VOCAL I \>  vocal-1\\
+%  VOCAL II \> vocal-2 \\
+%  VOCAL III \> vocal-3 \\
+%  VOCAL IV \> vocal-4 \\
+%  VOCAL V \> vocal-5 \\
+  SECRETARIO ACADÉMICO \> #2
+\end{tabbing}
+
+\vspace{24pt}
+
+\begin{center}
+\textbf{TRIBUNAL QUE PRACTICÓ EL EXAMEN GENERAL PRIVADO}
+\end{center}
+
+\begin{tabbing}
+  SECRETARIO ACADÉMICOxs \= xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx  \kill
+%  DIRECTOR \> decano en funciones al hacer privado \\
+  EXAMINADOR \> #3 \\
+  EXAMINADOR \> #4 \\
+  EXAMINADOR \> #5 \\
+%  SECRETARIO ACADÉMICO \> secretario en funciones al hacer privado
+\end{tabbing}
+\par}
+
+\newpage
+\textcolor[rgb]{1,1,1}{.} 
+
+\thispagestyle{empty}
+\newpage
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%		 LISTA DE FIGURAS Y TABLAS
+
+\newcommand{\figurasYtablas}[2]{%
+\ifthenelse{#1=1}{\listoffigures
+\addcontentsline{toc}{chapter}{ÍNDICE DE FIGURAS}}{}
+
+\ifthenelse{#2=1}{\listoftables
+\addcontentsline{toc}{chapter}{ÍNDICE DE TABLAS}}{}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%		 PÁGINA EN BLANCO
+%% código tomado de https://www.uv.es/ivorra/Latex/latex.htm
+\makeatletter
+\def\clearpage{%
+  \ifvmode
+    \ifnum \@dbltopnum =\m@ne
+      \ifdim \pagetotal <\topskip
+        \hbox{}
+      \fi
+    \fi
+  \fi
+  \newpage
+  \thispagestyle{empty}
+  \write\m@ne{}
+  \vbox{}
+  \penalty -\@Mi
+}
+\makeatother

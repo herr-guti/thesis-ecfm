@@ -1,0 +1,59 @@
+AUTOR:		WILLIAM ROBERTO GUTIERREZ HERRERA
+
+E-mail:		williamr.gutierrezh at gmail.com
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+ESTA CARPETA CONTIENE LOS FICHEROS PARA ESCRIBIR EL TRABAJO DE GRADUACIÓN
+EN ESCUELA DE CIENCIAS FÍSICAS Y MATEMÁTICAS, UNIVERSIDAD DE SAN CARLOS DE
+GUATEMALA
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+LA COMPILACIÓN SE REALIZÓN CON TeX Live 2015, TeXstudio, sobre el sitema
+operativo GNU/Linux Debian 8.2
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+thesisECFM.cls
+fichero modificado a partir de book.cls
+
+macros.sty
+fichero que hace llamada a los paquetes: babel, ifthen, textcase, inputenc
+fontenc, amsfonts, amsmath, amssymb, amsthm, mathrsfs, geometry, setspace,
+caption, color, longtable, pdfpages, graphicx, hyperref, url, breakurl.
+La mayoría de estos paquetes ya están preconfigurados con las
+especificaciones para el trabajo de graduación, NO SE DEBEN CAMBIAR, si
+necesita otros paquetes los debe llamar desde TesisTotal.tex y hacer las
+configuraciones respectivas.
+
+escudo.eps, escudo-eps-converted-to.pdf
+fichero que contiene el escudo de la USAC
+
+TesisTotal.tex
+fichero principal en donde se declaran macros y la inclusión de restantes
+ficheros *.tex
+
+bbtesis.tex
+fichero que contiene la bibliografía, dentro de él están las normas para
+el formato de cada tipo de referencia
+
+tch1.tex
+fichero con un ejemplo de un capítulo del trabajo de graduación, ejemplos
+ecuaciones, grupos de ecuaciones, tablas, tablas largas (longtables),
+imágenes, y de la identificación de éstas (recordar dar la fuente de cada una, si es propia obviar fuenteS)
+
+Con los pies de página dentro de tablas, considerar el comando \footnotetext
+
+
+agradecimientos.tex, dedicatoria.tex, introduccion.tex, objetivos.tex,
+simbolos.tex, c_y_r.tex
+Ficheros para incluir contendio adicional
+
+*.aux			ficheros auxiliares
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

@@ -1,0 +1,144 @@
+%%
+%%	AVISO IMPORTANTE
+%%	Formato optimizado para el sistema operativo GNU/Linux 64 bits
+%%	usar TexLive 2016 (o superior), http://www.ctan.org/tex-archive/systems/texlive/Images/
+%%	usar TeXstudio 2.11, http://texstudio.sourceforge.net/
+
+\documentclass[letterpaper,12pt]{thesisECFM}
+\usepackage{macros}
+\usepackage[apaciteclassic]{apacite}
+
+%%	NO OLVIDE INCLUIR FUENTE DE LAS TABLAS Y FIGURAS
+
+% Decomentar para anular recuadros en los hiperenlaces dentro del pdf
+% \hypersetup{pdfborder={0 0 0}}
+
+% Teoremas ---------------------------------------------------------
+% estos ambientes son para teoremas, lemas, corolarios, otros
+% si no los utiliza los puede obviar en su trabajo de graduación
+\theoremstyle{plain}
+\newtheorem{thm}{Teorema}[section]
+\newtheorem{cor}{Corolario}[chapter]
+\newtheorem{lem}{Lema}[chapter]
+\newtheorem{prp}{Proposición}[chapter]
+
+\theoremstyle{definition}
+\newtheorem{exa}{Ejemplo}[chapter]
+\newtheorem{defn}{Definición}[chapter]
+\newtheorem{axm}{Axioma}[chapter]
+
+\theoremstyle{remark}
+\newtheorem{rem}{Nota}[chapter]
+
+% Operadores y funciones -------------------------------------------
+% Los siguientes son ejemplos de comandos definidos por el usuario
+% puede borrarlos, únicamente están para mostrar cómo se construyen con LaTeX
+\DeclareMathOperator{\Supp}{Supp}       \DeclareMathOperator{\vol}{Vol}%
+\DeclareMathOperator{\Rz}{Re}           \DeclareMathOperator{\Iz}{Im}%
+
+\newcommand{\R}{\mathbb{R}}             \newcommand{\Z}{\mathbb{Z}}%
+\newcommand{\C}{\mathbb{C}}             \newcommand{\K}{\mathbb{K}}%
+\newcommand{\N}{\mathbb{N}}             \newcommand{\Q}{\mathbb{Q}}%
+\newcommand{\Af}{\mathfrak{A}}          \newcommand{\Bf}{\mathfrak{B}}%
+\newcommand{\Cf}{\mathfrak{C}}          \newcommand{\Df}{\mathfrak{D}}%
+\newcommand{\Ff}{\mathfrak{F}}          \newcommand{\Lf}{\mathfrak{L}}%
+\newcommand{\Mf}{\mathfrak{M}}          \newcommand{\Sf}{\mathfrak{S}}%
+\newcommand{\Hi}{\mathcal{H}}           \newcommand{\Ba}{\mathcal{B}}%
+\newcommand{\nada}{\varnothing}         \newcommand{\To}{\longrightarrow}%
+\newcommand{\RR}{[-\infty,+\infty]}     \newcommand{\df}{:=}%
+\newcommand{\sani}{$\sigma$\nobreakdash-anillo}
+\newcommand{\salg}{$\sigma$\nobreakdash-álgebra}
+\newcommand{\ff}{f^{-1}}
+
+\newcommand{\norm}[1]{\left\Vert#1\right\Vert}
+\newcommand{\pnorm}[2]{\norm{#1}_{#2}}
+\newcommand{\abs}[1]{\left\vert#1\right\vert}
+\newcommand{\su}[2]{\left\{#1_{#2}\right\}}
+\newcommand{\Su}[4]{\suce #1#2 _{#2=#3}^{#4}}
+\newcommand{\union}[4]{\bigcup_{{#2}={#3}}^{#4} #1_{#2}}
+\newcommand{\Union}[4]{\bigcup \limits_{{#2}={#3}}^{#4} #1_{#2}}
+\newcommand{\inter}[4]{\bigcap_{{#2}={#3}}^{#4} #1_{#2}}
+\newcommand{\Inter}[4]{\bigcap \limits_{{#2}={#3}}^{#4} #1_{#2}}
+
+\newcommand{\pdual}[2]{\left<#1,#2\right>}
+\newcommand{\bra}[1]{\left<#1\right\vert}
+\newcommand{\ket}[1]{\left\vert#1\right>}
+\newcommand{\braket}[2]{\left<#1\vert#2\right>}
+\newcommand{\Braket}[2]{\left\vert#1\right>\! \left<#2\right\vert}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+% Cuerpo de la tesis -----------------------------------------------
+
+\begin{document}
+
+%% Datos generales del trabajo de graduación
+\datosThesis%
+{2}%						% física 1; matemática 2
+{De Regreso a un Mundo Feliz a través de la Geometría Diferencial}%		% Título del trabajo de graduación
+{Fulano de Tal}%			% autor
+{Mengano Pérez}%			% asesor
+{septiembre de 2015}		% mes y año de la orden de impresión
+{2}							% femenino 1; masculino 2
+
+%% Datos generales del examen general privado
+\examenPrivado%
+{M.Sc. Edgar Anibal Cifuentes Anléu}%	% director ECFM
+{Ing. José Rodolfo Samayoa Dardón}%		% secretario académico
+{Perengano}%		% examinador 1
+{Zutano}%		% examinador 2
+{Fulano 2}%		% examinador 3
+
+{\onehalfspacing	% interlineado 1 1/2
+
+\OrdenImpresion{ordenImpresion}		% incluye orden de impresión, guardada en pdf
+
+\Agrade{agradecimientos}			% Agradecimientos
+
+\Dedica{dedicatoria}				% Dedicatoria
+
+\par}
+ 
+\frontmatter    % --------------------------------------------------  Hojas preliminares
+
+{\onehalfspacing	% interlineado 1 1/2
+
+\tableofcontents    % Índice general vinculado
+
+%%% \figurasYtablas{ lista_figuras }{ lista_tablas }; con valor 1 se incluye la lista,
+%%% cualquier otro valor no la genera
+\figurasYtablas{1}{1}
+
+\include{simbolos}  % Lista de símbolos
+
+\include{objetivos}      % Resumen y objetivos
+
+\include{introduccion}      % Introducción
+
+\mainmatter     % --------------------------------------------------  Cuerpo del Trabajo de Graduación
+
+\include{tch1}      % Cap. 1 
+
+%\include{tch2}      % Cap. 2 
+
+%\include{tch3}      % Cap. 3 
+
+{\backmatter     %	Capítulos no van numerados --------------------------------------------------  Apartados finales
+
+\include{c_y_r}     % Conclusiones y recomendaciones
+
+\renewcommand{\bibname}{BIBLIOGRAF\'IA}
+\nocite{*}			% incluir a todas las entredas bibliográficas
+\bibliographystyle{apacite}	% estilo de bibliografía
+\bibliography{bbtesis}   % Bibliografía
+
+}
+
+% Descomentar en el caso de necesitar incluir apéndices
+%\appendix			% Apéndices
+
+%\include{tch1}
+
+\par}               % termina interlineado 1 1/2
+
+\end{document}
