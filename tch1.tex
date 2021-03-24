@@ -212,61 +212,32 @@ Las tablas y gráficas deben tener un título \verb|\caption{text}| que la ident
 
 %% TABLAS LARGAS LLEVAN TODAS LAS DIVISIONES DE LOS BLOQUES
 \subsection{Tablas}
-
-\begin{longtable}{|l|l|l|l|l|}
-\caption[]{Diccionario de datos, tabla \textit{marn} (continuación)} \\ \hline
-
-\multicolumn{1}{|c|}{\textbf{Name}} & \multicolumn{1}{c|}{\textbf{Data type}} & \multicolumn{1}{c|}{\textbf{Not Null?}} & \multicolumn{1}{c|}{\textbf{Primary key?}} & \multicolumn{1}{c|}{\textbf{Default}} \\ \hline \endhead
-	\caption[Diccionario de datos, tabla \textit{marn}]{Diccionario de datos, tabla \textit{marn}. Fuente: obtenida de pgAdminIII}\label{data:marn} \\ \hline
-
-	\multicolumn{1}{|c|}{\textbf{Name}} & \multicolumn{1}{c|}{\textbf{Data type}} & \multicolumn{1}{c|}{\textbf{Not Null?}} & \multicolumn{1}{c|}{\textbf{Primary key?}} & \multicolumn{1}{c|}{\textbf{Default}} \\ \hline \endfirsthead 
-
-	id & \textit{integer} & \textit{Yes} & \textit{Yes} & \textit{nextval('marn\_id\_seq'} \\ %\hline
-
-	 &  &  &  & \textit{::regclass)}\footnote{Note que la tabla es mas ancha que lo preestablecido. Procure diseñar elementos acordes con el espacio preestablecido.} \\ \hline
-
-	\multicolumn{ 5}{|l|}{Clave primaria que  obtendrá su valor de forma secuencial al ingresar un nuevo registro} \\ \hline
-		lista\_tax & \textit{text} & \textit{No} & \textit{No} & \textit{} \\ \hline
-
-	\multicolumn{ 5}{|l|}{Clasificación del proyecto en base al Listado Taxativo del MARN} \\ \hline
-		no\_marn & \textit{text} & \textit{No} & \textit{No} & \textit{} \\ \hline
-
-	\multicolumn{ 5}{|l|}{número de expediente asignado por el MARN} \\ \hline
-		date0 & \textit{date} & \textit{No} & \textit{No} & \textit{} \\ \hline
-
-	\multicolumn{ 5}{|l|}{Día del ingreso del expediente del proyecto (instrumento ambiental) en el MARN} \\ \hline
-		notas & \textit{text} & \textit{No} & \textit{No} & \textit{} \\ \hline
-
-	\multicolumn{ 5}{|l|}{Observaciones} \\ \hline
-		no\_res\_ap & \textit{text} & \textit{No} & \textit{No} & \textit{} \\ \hline
-
-	\multicolumn{ 5}{|l|}{número de resolución aprobatoria del proyecto por el MARN%
-	\footnote{Note que en esta línea la tabla se corta y continua en la siguiente página. 
-	Utilizar paquete \textsf{longtable} y ambiente \textit{longtable}.}} \\ \hline
-		date\_res\_ap & \textit{date} & \textit{No} & \textit{No} & \textit{} \\ \hline
-
-	\multicolumn{ 5}{|l|}{Día de emisión de la resolución aprobatoria por el MARN} \\ \hline
-		date0\_fianza & \textit{date} & \textit{No} & \textit{No} & \textit{} \\ \hline
-
-	\multicolumn{ 5}{|l|}{Día de emisión de fianza del proyecto.} \\ \hline
-		no\_res\_fianza & \textit{text} & \textit{No} & \textit{No} & \textit{} \\ \hline
-
-	\multicolumn{ 5}{|l|}{número de la resolución de aceptación de fianza por el MARN} \\ \hline
-		date1\_fianza & \textit{date} & \textit{No} & \textit{No} & \textit{} \\ \hline
-
-	\multicolumn{ 5}{|l|}{Fecha de inicio de fianza} \\ \hline
-		date2\_fianza & \textit{date} & \textit{No} & \textit{No} & \textit{} \\ \hline
-
-	\multicolumn{ 5}{|l|}{Fecha de finalización de fianza (renovación)} \\ \hline
-		lic\_ambiental & \textit{text} & \textit{No} & \textit{No} & \textit{} \\ \hline
-
-	\multicolumn{ 5}{|l|}{número de licencia ambiental} \\ \hline
-		date\_lic\_ambiental & \textit{date} & \textit{No} & \textit{No} & \textit{} \\ \hline
-
-	\multicolumn{ 5}{|l|}{Fecha de finalización de ultima licencia ambiental} \\ \hline
-		proyecto\_id & \textit{integer} & \textit{Yes} & \textit{No} & \textit{} \\ \hline
-
-	\multicolumn{ 5}{|l|}{Enlace con la tabla proyecto\_id} \\ \hline
-\end{longtable}
-
+	\begin{longtable}[h]{cccc}
+	\caption{Funciones especiales}\label{t:div}\\ \hline
+	Salida & Comando & Salida & Comando \\ \hline \endfirsthead
+	\multicolumn{4}{l}{\textit{(viene en la anterior página)}}\\
+	\hline
+	Salida & Comando & Salida & Comando \\ \hline \endhead
+	\hline \multicolumn{4}{l}{\textit{(continúa en la página siguiente)}} \\ \endfoot
+	\hline \endlastfoot
+	$\arg$ & \verb"\arg" & $\cos$ & \verb"\cos" \\
+	$\cosh$ & \verb"\cosh" & $\cot$ & \verb"\cot" \\
+	$\coth$ & \verb"\coth" & $\csc$ & \verb"\csc" \\
+	$\deg$ & \verb"\deg" & $\det$ & \verb"\det" \\
+	$\dim$ & \verb"\dim" & $\exp$ & \verb"\exp" \\
+	$\gcd$ & \verb"\gcd" & $\hom$ & \verb"\hom" \\
+	$\inf$ & \verb"\inf" & $\ker$ & \verb"\ker" \\
+	$\lg$ & \verb"\lg" & $\ln$ & \verb"\ln" \\
+	$\log$ & \verb"\log" & $\max$ & \verb"\max" \\
+	$\min$ & \verb"\min" & $\Pr$ & \verb"\Pr" \\
+	$\sec$ & \verb"\sec" & $\sin$ & \verb"\sin" \\
+	$\sinh$ & \verb"\sinh" & $\sup$ & \verb"\sup" \\
+	$\tan$ & \verb"\tan" & $\tanh$ & \verb"\tanh" \\
+	$\arccos$ & \verb"\arccos" & $\arcsin$ & \verb"\arcsin" \\
+	$\arctan$ & \verb"\arctan" & $\lim$ & \verb"\lim" \\
+	$\liminf$ & \verb"\liminf" & $\limsup$ & \verb"\limsup" \\
+	$\bmod$ & \verb"\bmod" & $\pmod$ & \verb"\pmod" \\
+	$\mod$ & \verb"\mod" & $\sen$ & \verb"\sen"\\ [3pt]
+	\hline
+\end{longtable} Notemos que \verb"\sen" se reconoce como seno, por lo cual es la opción a utilizar en español.
 
