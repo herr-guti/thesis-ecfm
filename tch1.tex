@@ -51,18 +51,15 @@ conjuntos y operaciones entre conjuntos pueden ser expresadas por
 medio de funciones características. 
 
 %%%	TABLA CORTA, ÚNICAMENTE LLEVA LÍNEAS HORIZONTALES PARA SEPARAR BLOQUES
-
-\begin{table}[ht]
-\caption[título optativo de la tabla]{Propiedades de los espacios $L^p$. Fuente: tomada de \cite[Cap. 3]{Brez}.}\label{tablaLp}
-\centering
-\begin{tabular}{cccc}
-\hline
-Espacio & Reflexivo\footnote{En el sentido topológico.} & Separable & Dual \\ \hline %\hline
-$L^p$, $1<p<\infty$  & Si & Si & $L^q$, $1/p+1/q=1$ \\
-$L^1$ & No & Si & $L^\infty$ \\
-$L^\infty$ & No & No & $L^1 \varsubsetneq (L^\infty)’$ \\ \hline
-\end{tabular}
-\end{table}\footnotetext{En el sentido topológico.} 
+\begin{longtable}[c]{cccc}
+	\caption[título optativo de la tabla]{Propiedades de los espacios $L^p$.}\label{tablaLp}\\
+	\hline
+	Espacio & Reflexivo\footnote{En el sentido topológico.} & Separable & Dual\\ \hline 
+	$L^p$, $1<p<\infty$  & Si & Si & $L^q$, $1/p+1/q=1$ \\
+	$L^1$ & No & Si & $L^\infty$ \\
+	$L^\infty$ & No & No & $L^1 \varsubsetneq (L^\infty)’$ \\ \hline
+	\caption*{Fuente: tomada de \cite[Cap. 3]{Brez}.}\vspace{-12pt}
+\end{longtable}
 
 \begin{defn}\label{dfcp1}Si $\su En$ es una sucesión de
 conjuntos, definiremos los conjuntos $\overline{\lim } E_n$ y
@@ -85,7 +82,6 @@ límite será $\lim \limits_ {n\rightarrow \infty}E_n = \inter En1
 \infty$. En ambos casos nos referiremos a ella como
 \textbf{monótona}.\end{defn}
 
-
 \begin{defn}\label{dfcp2}Sea $f$ una aplicación definida del conjunto
 $X$ al conjunto $Y$, es decir $f:X\To Y$. Para cualquier subconjunto
 $T\subseteq Y$, definimos la \textbf{imagen inversa} de $T$, bajo
@@ -106,7 +102,6 @@ $f$, denotada por $\ff (T)$, como sigue:
     \vspace{-6pt} \item $\ff(Y) = X$.
 \end{enumerate}
 \end{thm}
-
 
 Las propiedades (1) y (3) del teorema~\ref{thcp1} establecen las
 condiciones para la unión disjunta en una familia en $Y$. Sea ahora
@@ -166,8 +161,8 @@ b$. Entonces $a_j b_j \To ab$.
 funciones de valor real extendido en un conjunto $X$. Entonces
 $\sup_j f_j$ y $\limsup \limits_{j\rightarrow \infty} f_j$ son las
 funciones definidas en $X$ por:
-\[\left(\sup_j f_j\right)(x)\df \sup_j(f_j(x)),\quad \left(\limsup
-\limits_{j \rightarrow \infty} f_j\right)(x)\df \limsup \limits_{j
+\[\Big(\sup_j f_j\Big)(x)\df \sup_j(f_j(x)),\quad \Big(\limsup
+\limits_{j \rightarrow \infty} f_j\Big)(x)\df \limsup \limits_{j
 \rightarrow \infty}(f_j(x)).\] Si $f(x)=\lim \limits_{j \rightarrow
 \infty} f_j(x)$, y asumimos que el límite existe para cualquier
 $x\in X$, entonces llamaremos a $f$ el \textbf{límite puntual} de la
@@ -177,7 +172,7 @@ este contexto.\end{defn}
 \begin{figure}[ht]
 \centering
 \label{fig:analisisGraficoModelo3}
-\includegraphics[width=0.9\linewidth]{analisisGraficoModelo3}\\
+\includegraphics[width=0.8\linewidth]{analisisGraficoModelo3}\\
 \caption[Titulo en el índice de figuras (opcional)]{Título en el 
 documento. Las imágenes pueden ser raster (de preferencia jpg, png 
 con buena resolución para imprimir) o vectorial (convertir a pdf, en 
@@ -204,6 +199,8 @@ denotaremos su valor absoluto con $\abs f$, entonces tenemos
 \[\abs f=f^++f^-,\quad f=f^+-f^-.\]
 \end{prp}
 
+Texto. Texto.
+
 \begin{longtable}[c]{| c | c |}
 	\caption{Long table caption.\label{long}}\\
 	
@@ -227,7 +224,7 @@ denotaremos su valor absoluto con $\abs f$, entonces tenemos
 	\hline
 	\multicolumn{2}{| c |}{End of Table}\\
 	\hline\hline
-	\caption*{Fuente: La tabla se generó a partir del código dado en  \url{https://www.overleaf.com/learn/latex/tables} con ligeros cambios.}
+	\caption*{Fuente: La tabla se generó a partir del código dado en  \url{https://www.overleaf.com/learn/latex/tables} con ligeros cambios.}\vspace{-6pt}
 	\endlastfoot
 	
 	Lots of lines & like this\\
@@ -261,11 +258,6 @@ denotaremos su valor absoluto con $\abs f$, entonces tenemos
 	Lots of lines & like this\\
 	Lots of lines & like this\\
 	Lots of lines & like this\\
-	Lots of lines & like this\\
-	Lots of lines & like this\\
-	Lots of lines & like this\\
-	Lots of lines & like this\\
-	Lots of lines & like this\\
 \end{longtable}
 
-
+Continúa el texto.
