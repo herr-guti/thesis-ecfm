@@ -6,29 +6,14 @@
 
 \documentclass[letterpaper,12pt]{thesisECFM}
 \usepackage{macros}
-\usepackage[apaciteclassic]{apacite}
+%\usepackage[apaciteclassic]{apacite}
+\usepackage[spanish, nocomment, noabstract]{flexbib}
+%\usepackage[spanish, plain, nocomment, noabstract]{flexbib}
 
 %%	NO OLVIDE INCLUIR FUENTE DE LAS TABLAS Y FIGURAS
 
 % Decomentar para anular recuadros en los hiperenlaces dentro del pdf
 % \hypersetup{pdfborder={0 0 0}}
-
-% Teoremas ---------------------------------------------------------
-% estos ambientes son para teoremas, lemas, corolarios, otros
-% si no los utiliza los puede obviar en su trabajo de graduación
-\theoremstyle{plain}
-\newtheorem{thm}{Teorema}[section]
-\newtheorem{cor}{Corolario}[chapter]
-\newtheorem{lem}{Lema}[chapter]
-\newtheorem{prp}{Proposición}[chapter]
-
-\theoremstyle{definition}
-\newtheorem{exa}{Ejemplo}[chapter]
-\newtheorem{defn}{Definición}[chapter]
-\newtheorem{axm}{Axioma}[chapter]
-
-\theoremstyle{remark}
-\newtheorem{rem}{Nota}[chapter]
 
 % Operadores y funciones -------------------------------------------
 % Los siguientes son ejemplos de comandos definidos por el usuario
@@ -129,7 +114,8 @@
 
 \renewcommand{\bibname}{BIBLIOGRAF\'IA}
 \nocite{*}			% incluir a todas las entredas bibliográficas
-\bibliographystyle{apacite}	% estilo de bibliografía
+%\bibliographystyle{apacite}	% estilo de bibliografía
+\bibliographystyle{flexbib}
 \bibliography{bbtesis}   % Bibliografía
 
 }

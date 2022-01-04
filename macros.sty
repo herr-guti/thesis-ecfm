@@ -60,6 +60,22 @@
 %\renewcommand{\thefigure}{\arabic{figure}}
 %\renewcommand{\thetable}{\Roman{table}}
 
+% Teoremas ---------------------------------------------------------
+% estos ambientes son para teoremas, lemas, corolarios, otros
+% si no los utiliza los puede obviar en su trabajo de graduación
+\theoremstyle{definition}
+\newtheorem{defn}{Definición}[chapter]
+\newtheorem{axm}[defn]{Axioma}
+\newtheorem{exa}[defn]{Ejemplo}
+\newtheorem{rem}[defn]{Nota}
+
+
+\theoremstyle{plain}
+\newtheorem{thm}[defn]{Teorema}
+\newtheorem{cor}[defn]{Corolario}
+\newtheorem{lem}[defn]{Lema}
+\newtheorem{prp}[defn]{Proposición}
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%		DATOS DEL TRABAJO DE GRADUACIÓN
 \newcommand{\datosThesis}[6]{%
@@ -137,7 +153,7 @@ GUATEMALA, {\MakeTextUppercase{#5}}
 \end{center}
 
 \newpage
-\textcolor[rgb]{1,1,1}{.} 
+\phantom{.} 
 
 \thispagestyle{empty}
 \newpage
@@ -190,7 +206,7 @@ UNIVERSIDAD DE SAN CARLOS DE GUATEMALA\\[6pt] ESCUELA DE CIENCIAS FÍSICAS Y MAT
 \par}
 
 \newpage
-\textcolor[rgb]{1,1,1}{.} 
+\phantom{.} 
 
 \thispagestyle{empty}
 \newpage

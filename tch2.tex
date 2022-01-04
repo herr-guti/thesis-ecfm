@@ -1,23 +1,37 @@
 \chapter{CITAS BIBLIOGRÁFICAS}
 
+\begin{thm}
+	Un teorema para este capítulo.
+\end{thm}
+
 \begin{center}
 	\begin{tabular}{c|c}
 		\hline
 		Comando	& Salida  \\
 		\hline
-		\verb|\cite[sufijo]{Brez,Hewit}| & \cite[sufijo]{Brez,Hewit} \\
+		\verb|\cite{Brez}| & \cite{Brez} \\
 		\hline
-		\verb|\citeNP[sufijo]{Brez,Hewit}| & \citeNP[sufijo]{Brez,Hewit} \\
+		\verb|\cite[sufijo]{Hewit}| & \cite[sufijo]{Hewit} \\
 		\hline
-		\verb|\citeA[sufijo]{Brez,Hewit}| & \citeA[sufijo]{Brez,Hewit} \\
+		\verb|\cite[prefijo][sufijo]{Brez}| & \cite[prefijo][sufijo]{Brez} \\
 		\hline
-		\verb|\citeauthor[sufijo]{Brez,Hewit}| & \citeauthor[sufijo]{Brez,Hewit} \\
+		\verb|\citet{Brez,liu}| & \citet{Brez,liu} \\
 		\hline
-		\verb|\citeyear[sufijo]{Brez,Hewit}| & \citeyear[sufijo]{Brez,Hewit} \\
+		\verb|\citep{Brez,liu}| & \citep{Brez,liu} \\
 		\hline
-		\verb|\citeyearNP[sufijo]{Brez,Hewit}| & \citeyearNP[sufijo]{Brez,Hewit} \\
+		\verb|\citealt{Brez,liu}| & \citealt{Brez,liu} \\
 		\hline
-		\verb|\cite{liu}| & \cite{liu} \\ \hline
-		\verb|\fullcite{liu}| & \fullcite{liu} \\ \hline
+		\verb|\citealp{Brez,liu}| & \citealp{Brez,liu} \\
+		\hline
+		\verb|\citeauthor{liu}| & \citeauthor{liu} \\
+		\hline
+		\verb|\citeauthor*{liu}| & \citeauthor*{liu} \\
+		\hline
+		\verb|\citeyear{Brez,Hewit}| & \citeyear{Brez,Hewit} \\
+		\hline
+		\verb|\citeyearpar{Brez,Hewit}| & \citeyearpar{Brez,Hewit} \\
+		\hline
 	\end{tabular}
-\end{center} Dado que utilizamos la opción \textit{spanish} para el paquete \textsf{babel}, las citas no pueden contener prefijos, los cuales se agregan así \verb|\cite<prefijo>[sufijo]{Brez,Hewit}|.
+\end{center} Los comando aceptan \verb|[sufijo]| y \verb|[prefijo]|, el segundo requiere agregar un sufijo.
+
+En algunos casos es necesario dar la cita completa (es costubre en algunos ámbitos al citar por primera vez), el código \verb|\citefull{liu}, p. 573| produce \citefull{liu}, p. 573.
