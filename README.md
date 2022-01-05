@@ -2,7 +2,7 @@
 
 Este repositorio contiene los ficheros para escribir el trabajo de graduación para las carreras de matemáticas o física.
 
-La plantilla inical se realizó con Texlive 2015, TeXstudio, sobre el sistema Operativo GNU/Linux Debian 8.2. Las actualizaciones más recientes se hicieron con Ubuntu 20.04 (TeXstudio y TeXlive 2019) y MacOS Monterey (TeXstudio y TeXlive 2021), el autor nunca la ha corrido con Windows paro considera que no debe haber problema con este sistema operativo.
+La plantilla inical se realizó con Texlive 2015, TeXstudio, sobre el sistema Operativo GNU/Linux Debian 8.2. Las actualizaciones más recientes se hicieron con Ubuntu 20.04 (TeXstudio y TeXlive 2019) y MacOS Monterey (TeXstudio y TeXlive 2021), el autor nunca la ha corrido con Windows pero supone que no debe haber problema.
 
 ## Descripción del contenido
 
