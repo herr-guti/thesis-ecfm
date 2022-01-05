@@ -1,8 +1,8 @@
 # Plantilla para elaborar trabajo de graduación - [ECFM](https://ecfm.usac.edu.gt/)
 
-Este repositorio contiene los ficheros para escribir el trabajo de graduación para las carreras de matemáticas y física.
+Este repositorio contiene los ficheros para escribir el trabajo de graduación para las carreras de matemáticas o física.
 
-La plantilla se realizó con Texlive 2015, TeXstudio, sobre el sistema Operativo GNU/Linux Debian 8.2. Las actualizaciones se hicieron sobre Ubuntu 20.4 y MacOS (Monterey), no debe haber problema con Windows.
+La plantilla se realizó con Texlive 2015, TeXstudio, sobre el sistema Operativo GNU/Linux Debian 8.2. Las actualizaciones se hicieron con Ubuntu 20.04 y MacOS (Monterey), no debe haber problema con Windows.
 
 ## Descripción del contenido
 
@@ -36,4 +36,4 @@ Los ambientes de teoremas (teoremas, definiciones, proposiciones, corolarios, le
 
 ### Contacto
 
-William Roberto Gutiérrez-Herrera, _wgutierrez at ecfm dot usac dot edu dot gt_
+William Roberto Gutiérrez-Herrera, _wgutierrez at ecfm dot usac dot edu dot gt_.
