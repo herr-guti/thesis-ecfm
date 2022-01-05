@@ -1,37 +1,38 @@
-## Welcome to GitHub Pages
+# Plantilla para elaborar trabajo de graduación - [ECFM](https://ecfm.usac.edu.gt/)
 
-You can use the [editor on GitHub](https://github.com/herr-guti/thesis-ecfm/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+Este repositorio contiene los ficheros para escribir el trabajo de graduación para las carreras de matemáticas y física.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+La plantilla se realizó con Texlive 2015, TeXstudio, sobre el sistema Operativo GNU/Linux Debian 8.2. Las actualizaciones se hicieron sobre Ubuntu 20.4 y MacOS (Monterey), no debe haber problema con Windows.
 
-### Markdown
+## Descripción del contenido
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+- `thesisECFM.cls` fichero modificado a partir de `book.cls`.
+- `macros.sty` fichero que hace llamada a los paquetes: babel, ifthen, textcase, inputenc fontenc, amsfonts, amsmath, amssymb, amsthm, mathrsfs, geometry, setspace, caption, color, longtable, pdfpages, graphicx, hyperref, url, breakurl. La mayoría de estos paquetes ya están preconfigurados con las especificaciones para el trabajo de graduación, **NO SE DEBEN CAMBIAR**, si necesita otros paquetes los debe llamar desde `TesisTotal.tex` o `TesisTotalAPA.tex` y hacer las configuraciones respectivas.
+- `escudo.pdf` fichero que contiene el escudo de la USAC.
+- `TesisTotal.tex` fichero principal en donde se declaran macros y la inclusión de restantes ficheros _*.tex_, lo utiliza si no usará **BibTeX** para gestinar la bibliografía y citas.
+- `bbtesis.tex` fichero que contiene la bibliografía, dentro de él están las normas para el formato de cada tipo de referencia, para usar con _TesisTotal.tex_.
+- `TesisTotalAPA.tex` fichero que un inicio se incluyó para implementar las **normas APA** y  **BibTeX** para gestinar la bibliografía y citas. Ahora se cambió para utilizar **flexbib.sty** y los complementos **flexbib.bst** y **spanishbst.tex**, éstos últimos ficheros fueron descargados de [VJornadas](https://github.com/JornadasR/VJornadas), con lo cual se tiene mejor control del estilo bibliográfico en español. Para una guía de uso de _flexbib_ consultar [CervanTeX](http://www.cervantex.es/files/cervantex/texemplares6.pdf).
+- `bbtesis.bib` fichero que contiene la bibliografía para gestión con _BibTeX_, en `bibtesis.txt` hay una descritpción del tipo de referencia.
+- `tch1.tex` fichero con un ejemplo de un capítulo del trabajo de graduación, ejemplos ecuaciones, grupos de ecuaciones, tablas, tablas largas (longtables), imágenes, y de la identificación de éstas (recordar dar la fuente de cada una, si es propia obviarlo). Con los pies de página dentro de tablas, considerar el comando **\footnotetex**.
+- `tch2.tex` fichero con una tabla con los comandos para citas válidos con **flexbib**, éste solamente está incluido en `TesisTotalAPA.tex`.
+- `agradecimientos.tex`, `dedicatoria.tex`, `introduccion.tex`, `objetivos.tex`, `simbolos.tex`, `c_y_r.tex` ficheros para incluir contendio adicional: agradacemientos que el autor quiera incluir, dedicatoria del trabajo de graduación que el autor quiera hacer, introducción, objetivo general y objetivos específicos, lista de símbolos a utilizar, conclusiones y recomendaciones.
+- `apoyops.pdf` una guía de _LaTeX_ para resolver las dudas más comunes.
 
-```markdown
-Syntax highlighted code block
+## Ambientes de teoremas
+Los ambientes de teoremas (teoremas, definiciones, proposiciones, corolarios, lemas, axomas, notas y ejemplos) están configurados para numerarlos de forma consecutiva respecto al capítulo sin discriminar el tipo.
 
-# Header 1
-## Header 2
-### Header 3
+```
+\begin{defn} Definición \end{defn}
+\begin{axm} Axioma \end{axm}
+\begin{exa} Ejemplo \end{exa}
+\begin{rem} Nota \end{rem}
 
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+\begin{thm} Teorema \end{thm}
+\begin{cor} Corolario \end{cor}
+\begin{lem} Lema \end{lem}
+\begin{prp} Proposición \end{prp}
 ```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+### Contacto
 
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/herr-guti/thesis-ecfm/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+William Roberto Gutiérrez-Herrera, _wgutierrez at ecfm dot usac dot edu dot gt_
