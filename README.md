@@ -15,7 +15,7 @@ La plantilla inicial se realizó con Texlive 2015, TeXstudio, sobre el sistema O
 - `ordenImpresion.pdf` este fichero debe sustituirse por copia digital de la carta emitida por el Director de la escuela, donde autoriza la impresión del trabajo de graduación.
 - `bbtesis.bib` fichero que contiene la bibliografía para gestión con _BibTeX_, en `bibtesis.txt` hay una descritpción del tipo de referencia.
 - `tch1.tex` fichero con un ejemplo de un capítulo del trabajo de graduación, ejemplos ecuaciones, grupos de ecuaciones, tablas, tablas largas (longtables), imágenes, y de la identificación de éstas (recordar dar la fuente de cada una, si es propia obviarlo). Con los pies de página dentro de tablas, considerar el comando **\footnotetex**.
-- `tch2.tex` fichero con una tabla con los comandos para citas válidos con **flexbib**, éste solamente está incluido en `TesisTotalAPA.tex`.
+- `tch2.tex` fichero con una tabla con los comandos para citas válidos con **flexbib**, éste solamente está incluido en `TesisTotalBibTeX.tex`.
 - `agradecimientos.tex`, `dedicatoria.tex`, `introduccion.tex`, `objetivos.tex`, `simbolos.tex`, `c_y_r.tex` ficheros para incluir contendio adicional: agradacemientos que el autor quiera incluir, dedicatoria del trabajo de graduación que el autor quiera hacer, introducción, objetivo general y objetivos específicos, lista de símbolos a utilizar, conclusiones y recomendaciones.
 - `apoyops.pdf` una guía de _LaTeX_ para resolver las dudas más comunes.
 
