@@ -53,69 +53,69 @@
 % Cuerpo de la tesis -----------------------------------------------
 
 \begin{document}
-
-%% Datos generales del trabajo de graduación
-\datosThesis%
-{2}%						% física 1; matemática 2
-{Título del trabajo de graduación}%		% Título del trabajo de graduación
-{Nombre del autor}%			% autor
-{Nombre del asesor}%		% asesor
-{septiembre de 2015}		% mes y año de la orden de impresión
-{1}							% femenino 1; masculino 2
-
-%% Datos generales del examen general privado
-\examenPrivado%
-{Director}%			% al momento de realizar el examen
-{Examinador 1}%		% examinador 1
-{Examinador 2}%		% examinador 2
-{Examinador 2}%		% examinador 3
-{Secretario}%			% al momento de realizar el examen
-{\onehalfspacing	% interlineado 1 1/2
-
-\OrdenImpresion{ordenImpresion}		% incluye orden de impresión, guardada en pdf
-
-\Agrade{agradecimientos}			% Agradecimientos
-
-\Dedica{dedicatoria}				% Dedicatoria
-
-\par}
- 
-\frontmatter    % --------------------------------------------------  Hojas preliminares
-
-{\onehalfspacing	% interlineado 1 1/2
-
-\tableofcontents    % Índice general vinculado
-
-%%% \figurasYtablas{ lista_figuras }{ lista_tablas }; con valor 1 se incluye la lista,
-%%% cualquier otro valor no la genera
-\figurasYtablas{1}{1}
-
-\include{simbolos}  % Lista de símbolos
-
-\include{objetivos}      % Resumen y objetivos
-
-\include{introduccion}      % Introducción
-
-\mainmatter     % --------------------------------------------------  Cuerpo del Trabajo de Graduación
-
-\include{tch1}      % Cap. 1 
-
-%\include{tch2}      % Cap. 2 
-
-%\include{tch3}      % Cap. 3 
-
-{\backmatter     %	Capítulos no van numerados --------------------------------------------------  Apartados finales
-
-\include{c_y_r}     % Conclusiones y recomendaciones
-
-\include{bbtesis}   % Bibliografía
-}
-
-% Descomentar en el caso de necesitar incluir apéndices
-%\appendix			% Apéndices
-
-%\include{tch1}
-
-\par}               % termina interlineado 1 1/2
-
+	
+	%% Datos generales del trabajo de graduación
+	\datosThesis%
+	{2}%						% física 1; matemática 2
+	{Título del trabajo de graduación}%		% Título del trabajo de graduación
+	{Nombre completo}%			% autor
+	{Nombre completo del asesor}%		% asesor
+	{abril de 2024}		% mes y año de la orden de impresión
+	{1}							% femenino 1; masculino 2
+	
+	%% Datos generales del examen general privado
+	\examenPrivado%
+	{Director}%			% al momento de realizar el examen
+	{Examinador 1}%		% examinador 1
+	{Examinador 2}%		% examinador 2
+	{Examinador 2}%		% examinador 3
+	{Secretario}%			% al momento de realizar el examen
+	{\onehalfspacing	% interlineado 1 1/2
+		
+		%\OrdenImpresion{ordenImpresion}		% incluye orden de impresión, guardada en pdf
+		
+		\Agrade{agradecimientos}			% Agradecimientos
+		
+		\Dedica{dedicatoria}				% Dedicatoria
+		
+		\par}
+	
+	\frontmatter    % --------------------------------------------------  Hojas preliminares
+	
+	{\onehalfspacing	% interlineado 1 1/2
+		
+		\tableofcontents    % Índice general vinculado
+		
+		%%% \figurasYtablas{ lista_figuras }{ lista_tablas }; con valor 1 se incluye la lista,
+		%%% cualquier otro valor no la genera
+		\figurasYtablas{1}{1}
+		
+		\include{simbolos}  % Lista de símbolos
+		
+		\include{objetivos}      % Resumen y objetivos
+		
+		\include{introduccion}      % Introducción
+		
+		\mainmatter     % --------------------------------------------------  Cuerpo del Trabajo de Graduación
+		
+		\include{tch1}      % Cap. 1 
+		
+		%\include{tch2}      % Cap. 2 
+		
+		%\include{tch3}      % Cap. 3 
+		
+		{\backmatter     %	Capítulos no van numerados --------------------------------------------------  Apartados finales
+			
+			\include{c_y_r}     % Conclusiones y recomendaciones
+			
+			\include{bbtesis}   % Bibliografía
+		}
+		
+		% Descomentar en el caso de necesitar incluir apéndices
+		%\appendix			% Apéndices
+		
+		%\include{tch1}
+		
+		\par}               % termina interlineado 1 1/2
+	
 \end{document}
