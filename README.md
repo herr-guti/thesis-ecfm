@@ -8,7 +8,7 @@ La plantilla inicial se realizó con Texlive 2015, TeXstudio, sobre el sistema O
 
 - Al terminar el trabajo de graduación y ser aprobado por el asesor, debe presentar una copia impresa del mismo junto a la carta de aprobación del asesor al Jefe de Departamento correspondiente. Notar que tiene la línea `%\OrdenImpresion{ordenImpresion} % del archivo _TesisTotal.tex_ o _TesisTotalBibTeX.tex_ incluye orden de impresión, guardada en pdf` está comentada, **se descomentará más adelante**.
 - Al tener la aprobación del Jefe de Departamento, debe ingresar el expediente con el Director de la ECFM (trabajo de graduación, carta de asesor y carta del jefe de departamento).
-- El Director le dará la **Orden de Impresión**, ésta la debe escanear y guardar en un archivo pdf con el nombre `ordenImpresion.pdf`.
+- El Director le dará la **Orden de Impresión**, ésta la debe escanear y guardar en un archivo pdf con el nombre `ordenImpresion.pdf`. Es la única carta de debe adjuntar a su Trabajo de Graduación para entregar en las bibliotecas u otros lugares donde se le requiera.
 - Debe compilar otra vez su archivo `.tex` descomentando la línea `\OrdenImpresion{ordenImpresion} % incluye orden de impresión, guardada en pdf`, con esto tendrá completo su trabajo de graduación para ser entregado en la [Biblioteca Central](http://www.biblioteca.usac.edu.gt/biblioteca2023/tesis.html).
 
 ## Descripción del contenido
