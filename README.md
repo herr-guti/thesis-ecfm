@@ -43,4 +43,4 @@ Los ambientes de teoremas (teoremas, definiciones, proposiciones, corolarios, le
 
 ## Contacto
 
-William Roberto Gutiérrez-Herrera, _wgutierrez at ecfm dot usac dot edu dot gt_ o _wgutierrez8 at profesor dot usac dot edu dot gt_.
+Dudas y sugerencias dirigirse a William Roberto Gutiérrez-Herrera, _wgutierrez at ecfm dot usac dot edu dot gt_ o _wgutierrez8 at profesor dot usac dot edu dot gt_.
