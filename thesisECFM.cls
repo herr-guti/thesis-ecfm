@@ -393,13 +393,13 @@
     \ifnum \c@secnumdepth >\m@ne
       \if@mainmatter
 %        \Large\bfseries \chaptername\ \thechapter.\        %<-------------------- tipo de letra contador del título
-        \Large\bfseries \thechapter.\        %<-------------------- tipo de letra contador del título
+        \LARGE\bfseries \thechapter.\        %<-------------------- tipo de letra contador del título
         %\par\nobreak
         %\vskip 20\p@
       \fi
     \fi
     \interlinepenalty\@M
-    \Large \bfseries #1\par\nobreak           %<---------------------- tipo de letra del título
+    \LARGE \bfseries #1\par\nobreak           %<---------------------- tipo de letra del título
     \vskip 40\p@
   }}
 \def\@schapter#1{\if@twocolumn
@@ -413,7 +413,7 @@
   {\parindent \z@ \centering
     \normalfont
     \interlinepenalty\@M
-    \Large \bfseries  #1\par\nobreak
+    \LARGE \bfseries  #1\par\nobreak
     \vskip 40\p@
   }}
 \newcommand\section{\@startsection {section}{1}{\z@}%
